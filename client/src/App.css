@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+body {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1.5px;
+  padding-top: 50px;
+}
+nav {
+  background: #202020;
+  color: white;
+}
+.legend {
+  border-radius: 4px !important;
+  font-size: 18px !important;
+  padding: 14px !important;
+  font-style: italic;
+}
+.thumbs-wrapper {
+  margin: 0 !important;
+}
+.categories-list {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 4px;
+  width: 100%;
+}
+.categories-list li {
+  font-size: 18px;
+  margin: 0 12px;
+  color: orangered;
+}
+.categories-list li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: orangered;
+}
+.mycard {
+  padding: 18px !important;
+  position: relative;
+  max-width: 300px !important;
+}
+.mycard .title {
+  position: absolute;
+  top: -18px;
+  background: white;
+  padding: 4px 10px;
+  font-style: italic;
+}
+.image-rounded {
+  border-radius: 50% !important;
+  height: 150px;
+  width: 150px !important;
+  margin: 16px auto !important;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.icon {
+  color: black;
+  font-size: 28px;
+  border-radius: 60px;
+}
+.icon:hover {
+  color: gray;
+}
+.li-icon:hover {
+  color: blue;
+}
+.in-icon:hover {
+  color: red;
+}
+.gm-icon:hover {
+  color: #dd4c41;
+}
+.title {
+  color: black;
+  text-decoration: none;
+}
+.title:hover {
+  color: black;
+}
+.blogcard:hover {
+  transform: scale(1.01);
+}
+.auth-container.main-container {
+  margin-top: 6rem !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15) !important;
+}
+.tags {
+  color: black;
+}
+.close {
+  background: transparent;
+  border: none;
+}
+.not-link {
+  color: black;
+  text-decoration: none;
+}
+.tags p {
+  color: orangered;
+  font-weight: bold;
+}
+.text-theme {
+  text-decoration: none;
+  color: orangered !important;
+}
+.text-theme:hover {
+  color: orangered !important;
+}
+.custom-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: orangered;
+}
+@media screen and (max-width: 800px) {
+  .categories-list {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 4px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+  }
+}

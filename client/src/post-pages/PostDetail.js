@@ -82,9 +82,8 @@ export default function PostDetail({match}) {
     return (
         <div className='container my-4'>
             {
-            post === {}
-            ? <p>loading ...</p>
-            : <div className="row">
+            ("category" in post)
+            ? <div className="row">
                 <div className="col-lg-9 my-3">
                     <div className="card p-4">
                         <div className="tags d-flex">
@@ -151,9 +150,8 @@ export default function PostDetail({match}) {
                             })}
                         </div>
                     </div>
-                </div>
-                
-            </div>}
+                </div>  
+            </div> : <p>loading ...</p>}
             <h4 className='mt-4'>Popular posts:</h4>
             <div className="row my-4">
                 {popularPosts.map(each => {

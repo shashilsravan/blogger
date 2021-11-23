@@ -14,6 +14,12 @@ const OktaSignInWidget = ({ config, onSuccess, onError }) => {
         
         return () => widget.remove();
     }, [config, onSuccess, onError]);
-    return (<div ref={widgetRef} />);
+    return (
+        <>
+            <p className='test-creds'>
+                Test Credentials- <br /> Email: test@test.com and Password: okta@123
+            </p>
+            <div ref={widgetRef} />
+        </>);
 };
 export default OktaSignInWidget;
